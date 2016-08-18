@@ -9,6 +9,10 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-rep.org/packages/"))
 
+;;theme 
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(setq molokai-theme-kit t)
+(load-theme 'molokai t)
 
 ;;auto-install
 (require 'auto-install)
@@ -18,9 +22,6 @@
 (require 'mozc)
 (set-language-environment "Japanese")
 (setq default-input-method "japanese-mozc")
-
-;;theme 
-(load-theme 'twilight t)
 
 ;; not make backup-file
 (setq make-backup-files nil)
