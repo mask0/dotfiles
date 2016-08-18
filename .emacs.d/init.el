@@ -30,4 +30,3 @@
 
 ;;view space and tab
 ;(global-whitespace-mode 1)
-
