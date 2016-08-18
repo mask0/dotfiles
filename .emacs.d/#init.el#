@@ -1,8 +1,3 @@
-;; elispディレクトリの読み込み設定をしてない場合は下記を記述
-(add-to-list 'load-path "~/.emacs.d/elisp")
- 
-(require 'init-loader)
-(init-loader-load "~/.emacs.d/inits/")
 
 ;;package
 (package-initialize)
@@ -14,19 +9,37 @@
 (require 'auto-install)
 (auto-install-compatibility-setup)
 
+;;theme 
+(load-theme 'twilight t)
+
 ;;mozc
 (require 'mozc)
 (set-language-environment "Japanese")
 (setq default-input-method "japanese-mozc")
 
-;;theme 
-(load-theme 'twilight t)
-
+;;not view start-up
+(setq inhibit-startup-message t)
 ;; not make backup-file
+
 (setq make-backup-files nil)
 
 ;; remove autosave
 (setq delete-auto-save-files t)
+
+;;deleate menu-bar
+(menu-bar-mode -1)
+
+;;deleate tool-bar
+(tool-bar-mode -1)
+
+;;view culumn-number
+(column-number-mode t)
+
+;;view line-number
+(global-linum-mode t)
+
+;;view brackets
+(show-paren-mode 1)
 
 ;;view space and tab
 ;(global-whitespace-mode 1)
