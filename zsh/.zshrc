@@ -3,6 +3,11 @@ export LC_ALL=ja_JP.UTF-8
 
 export PATH=/home/takashihigasa/bin:/home/takashigasa/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 export PATH="$PATH"
+
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MAPPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+
 eval $(dircolors -b ~/.dir_colors)
 
 setopt transient_rprompt
