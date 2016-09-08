@@ -8,6 +8,13 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MAPPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
+#JAVA_HOME setting 2016/09/08#
+
+JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+export JAVA_HOME
+PATH=$PATH:$JAVA_HOME/bin
+export PATH
+
 eval $(dircolors -b ~/.dir_colors)
 
 setopt transient_rprompt
