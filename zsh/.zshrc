@@ -15,6 +15,9 @@ export JAVA_HOME
 PATH=$PATH:$JAVA_HOME/bin
 export PATH
 
+#android-path
+export PATH=$HOME/Android/Sdk/platform-tools:$HOME/Android/Sdk/tools:$PATH
+
 eval $(dircolors -b ~/.dir_colors)
 
 setopt transient_rprompt
@@ -107,3 +110,11 @@ alias ll="ls -lFh --color"
 alias la="ls -AFh --color"
 alias lla="ls -slAFh --color"
 alias lal="lla"
+
+
+##
+## <google drive> configuration
+##
+
+alias gdrive_m="google-drive-ocamlfuse ~/google_drive"
+alias gdrive_u="fusermount -u ~/google_drive"
