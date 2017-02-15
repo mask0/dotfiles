@@ -1,20 +1,17 @@
 ;;not view start-up
 (setq inhibit-startup-message t)
 
-;; メニューバーを消す
+;; delete menu-bar and tool-bar
 (menu-bar-mode -1)
-
-;; ツールバーを消す
 (tool-bar-mode -1)
 
-;; 列数を表示する
+;; view column-number and line-number
 (column-number-mode t)
-
-;; 行数を表示する
 (global-linum-mode t)
 
-;; カーソル行をハイライトする
+;; hi-light cursor-line and brackets
 (global-hl-line-mode t)
-
-;; 対応する括弧を光らせる
 (show-paren-mode 1)
+
+;; font size
+(set-frame-font "ricty-14")

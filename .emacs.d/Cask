@@ -1,27 +1,44 @@
+;
+; Cask
+; Emacs package installer
+; Version 1.0
+;
+; Created by Takashi Higasa
+; Last Modified 2017/02/15
+
+
+
+;; package source
 (source gnu)
 (source melpa)
+(source marmalade)
 
-(depends-on "bind-key")
-(depends-on "cask")
-(depends-on "dash")
-(depends-on "drag-stuff")
-(depends-on "exec-path-from-shell")
-(depends-on "expand-region")
-(depends-on "f")
-(depends-on "flycheck")
-(depends-on "flycheck-cask")
-(depends-on "htmlize")
-(depends-on "idle-highlight-mode")
+
+;; install package
+(depends-on "initchart" :git "http://github.com/yuttie/initchart.git")
+
+;; system tools
+(depends-on "init-loader")
+(depends-on "auto-complete")
+(depends-on "git-gutter")
+(depends-on "minimap")
+(depends-on "recentf-ext")
+(depends-on "session")
 (depends-on "magit")
-(depends-on "multiple-cursors")
-(depends-on "nyan-mode")
-(depends-on "pallet")
-(depends-on "popwin")
-(depends-on "prodigy")
-(depends-on "projectile")
-(depends-on "s")
-(depends-on "smartparens")
-(depends-on "smex")
-(depends-on "use-package")
-(depends-on "web-mode")
+
+;; helm
+(depends-on "helm")
+(depends-on "helm-ag")
+(depends-on "helm-descbinds")
+
+
+;; editor tools
+(depends-on "undo-tree")
 (depends-on "yasnippet")
+(depends-on "git-gutter")
+(depends-on "migemo")
+(depends-on "expand-region")
+
+;; mode
+(depends-on "markdown-mode")
+(depends-on "flycheck")
