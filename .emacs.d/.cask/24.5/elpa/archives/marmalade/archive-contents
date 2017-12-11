@@ -2229,7 +2229,7 @@
 	    (1 3)))
 	  "logging library for Emacs" single])
  (log-mode .
-	   [(0 0 3)
+	   [(0 0 4)
 	    ((emacs
 	      (24 3)))
 	    "Navigate Log Error Messages" single])
