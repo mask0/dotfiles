@@ -26,6 +26,9 @@ PROMPT="%F{yellow}${HOST}%f%% "
 RPROMPT="[%F{yellow}%39<...<% %~%f]"
 
 
+export PKG_CONFIG_PATH=~/lib/opencv-3.1.0/lib/pkgconfig
+export LD_LIBRARY_PATH=~/lib/opencv-3.1.0/lib
+
 ##
 ## Option settings
 ##
@@ -118,3 +121,5 @@ alias lal="lla"
 
 alias gdrive_m="google-drive-ocamlfuse ~/google_drive"
 alias gdrive_u="fusermount -u ~/google_drive"
+
+

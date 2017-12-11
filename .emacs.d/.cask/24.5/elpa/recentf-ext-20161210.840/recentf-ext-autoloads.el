@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("recentf-ext.el") (22691 64821 551526
-;;;;;;  195000))
+;;;### (autoloads nil nil ("recentf-ext.el") (23048 23404 806197
+;;;;;;  493000))
 
 ;;;***
 

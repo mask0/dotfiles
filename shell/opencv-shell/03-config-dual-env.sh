@@ -21,7 +21,7 @@ echo ""
 
 # generate symbolic-link
 cd ~
-mkdir .pkg-config
+#mkdir .pkg-config
 cd .pkg-config
 
 if [ -e ~/lib/opencv-2.4.13/ ]; then

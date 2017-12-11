@@ -1,1 +1,12 @@
-(require 'cask "~/.cask/cask.el")(cask-initialize);; elisp file load(add-to-list 'load-path "~/.emacs.d/elisp");; init-loader(require 'init-loader)(init-loader-load "~/.emacs.d/inits/");;theme ;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes");(setq molokai-theme-kit t);(load-theme 'molokai t);(load-theme 'cyberpunk t);(load-theme 'hickey t)(load-theme 'spolsky t);;mozc(require 'mozc)(set-language-environment "Japanese")(setq default-input-method "japanese-mozc");; not make backup-file(setq make-backup-files nil)(setq auto-save-default nil);; remove autosave(setq delete-auto-save-files t);;view space and tab;(global-whitespace-mode 1);; キーバインド(global-set-key (kbd "C-c o") 'recentf-open-files)
+;;; Cask 設定
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
+
+;;; init-loader 設定
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'init-loader)
+
+(setq init-loader-show-log-after-init "error-only")
+(init-loader-load "~/.emacs.d/inits")

@@ -1,44 +1,29 @@
-;
-; Cask
-; Emacs package installer
-; Version 1.0
-;
-; Created by Takashi Higasa
-; Last Modified 2017/02/15
 
 
-
-;; package source
 (source gnu)
 (source melpa)
 (source marmalade)
 
 
-;; install package
-(depends-on "initchart" :git "http://github.com/yuttie/initchart.git")
-
-;; system tools
-(depends-on "init-loader")
-(depends-on "auto-complete")
-(depends-on "git-gutter")
-(depends-on "minimap")
-(depends-on "recentf-ext")
-(depends-on "session")
-(depends-on "magit")
-
-;; helm
-(depends-on "helm")
-(depends-on "helm-ag")
-(depends-on "helm-descbinds")
-
-
-;; editor tools
-(depends-on "undo-tree")
-(depends-on "yasnippet")
-(depends-on "git-gutter")
-(depends-on "migemo")
+(depends-on "anzu")
+(depends-on "auto-install")
 (depends-on "expand-region")
+(depends-on "highlight-symbol")
+(depends-on "multiple-cursors")
+(depends-on "color-theme-tango")
+(depends-on "magit")
+(depends-on "git-gutter-fringe+")
+(depends-on "recentf-ext")
+(depends-on "auto-complete")
 
-;; mode
+
+;; progmodes
+(depends-on "coffee-mode")
+(depends-on "haskell-mode")
+(depends-on "js2-mode")	
+(depends-on "json-mode")
 (depends-on "markdown-mode")
-(depends-on "flycheck")
+(depends-on "scala-mode")
+(depends-on "tuareg")
+(depends-on "web-mode")
+(depends-on "yaml-mode")
